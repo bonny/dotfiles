@@ -71,7 +71,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     autojump
-    zsh-nvm
     colored-man-pages
     node
     dash
