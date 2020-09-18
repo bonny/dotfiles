@@ -122,3 +122,9 @@ prompt pure
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Set directory for Watson config file
+# I set this to a folder on Google Drive so I can share the config
+# between multiple computers.
+# https://tailordev.github.io/Watson/user-guide/configuration/
+export WATSON_DIR="/Users/bonny/Google Drive/Application Settings/watson"
+
