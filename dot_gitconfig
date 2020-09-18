@@ -1,0 +1,8 @@
+[user]
+	email = par.thernstrom@gmail.com
+	name = Pär Thernström
+[init]
+	defaultBranch = main
+[pager]
+	branch = false
+
