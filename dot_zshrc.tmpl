@@ -69,21 +69,28 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    autojump
-    colored-man-pages
-    node
-    dash
-    docker
-    docker-compose
-    fd
-    httpie
-    web-search
-    zsh-syntax-highlighting
+  git
+  autojump
+  colored-man-pages
+  node
+  dash
+  docker
+  docker-compose
+  fd
+  httpie
+  web-search
+  zsh-completions
+  zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+# Brew autocompletions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+  autoload -Uz compinit
+  compinit
+fi
 
+source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -92,11 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+#if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+#else
+#  export EDITOR='mvim'
+#fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -114,7 +121,8 @@ source $ZSH/oh-my-zsh.sh
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Enable pure prompt
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
 
 # nvm
@@ -126,5 +134,21 @@ prompt pure
 # I set this to a folder on Google Drive so I can share the config
 # between multiple computers.
 # https://tailordev.github.io/Watson/user-guide/configuration/
-export WATSON_DIR="/Users/bonny/Google Drive/Application Settings/watson"
+export WATSON_DIR="{{ .chezmoi.homedir }}/Google Drive/Application Settings/watson"
+
+# Make vim the default editor.
+# export EDITOR='vim';
+
+# Prefer US English and use UTF-8.
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X';
+
+# Get more brew request for Github, get from Lastpass
+export HOMEBREW_GITHUB_API_TOKEN="{{ (index (lastpass "5865985665424490517") 0).password }}"
 
