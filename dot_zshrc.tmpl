@@ -152,3 +152,22 @@ export MANPAGER='less -X';
 # Get more brew request for Github, get from Lastpass
 export HOMEBREW_GITHUB_API_TOKEN="{{ (index (lastpass "5865985665424490517") 0).password }}"
 
+watson_report_day()
+{
+	DATE=$1
+
+	echo $''
+
+	if [ $DATE ]
+	then
+		echo "Showing Watson report for date $DATE"
+	else
+		echo "Showing Watson report for today"
+		DATE=$(date +"%Y-%m-%d")
+	fi
+
+	echo $''
+
+    watson report -G -f $DATE -t $DATE
+}
+
