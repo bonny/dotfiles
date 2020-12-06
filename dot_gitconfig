@@ -5,4 +5,5 @@
 	defaultBranch = main
 [pager]
 	branch = false
+	log = false
 
