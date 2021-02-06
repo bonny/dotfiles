@@ -6,4 +6,6 @@
 [pager]
 	branch = false
 	log = false
+	diff = false
+
 
