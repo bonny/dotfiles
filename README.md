@@ -14,14 +14,14 @@ Theme:
 
 ## Some things must be installed:
 
-- _Lastpass CLI_  
+- **Lastpass CLI**  
   for secrets in Chezmoi  
   `brew install lastpass-cli`
-- chezmoi  
+- **chezmoi**  
   `chezmoi init --apply bonny`
-- Pure prompt.  
+- **Pure prompt**  
   `$ npm install --global pure-prompt`
-- Syntax highlighting:  
+- **Syntax highlighting**  
   `$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-- zsh-completions. 
+- **zsh-completions**     
   https://github.com/zsh-users/zsh-completions
