@@ -14,7 +14,7 @@ Theme:
 
 ## Some things must be installed:
 
-- lastpass cli  
+- _Lastpass CLI_ for secrets in Chezmoi
   `brew install lastpass-cli`
 - chezmoi  
   `chezmoi init --apply bonny`
@@ -24,5 +24,3 @@ Theme:
   `$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 - zsh-completions. 
   https://github.com/zsh-users/zsh-completions
-- Lastpass CLI for secrets in Chezmoi
-  brew install lastpass-cli
