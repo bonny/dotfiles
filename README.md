@@ -14,7 +14,8 @@ Theme:
 
 ## Some things must be installed:
 
-- _Lastpass CLI_ for secrets in Chezmoi
+- _Lastpass CLI_  
+  for secrets in Chezmoi  
   `brew install lastpass-cli`
 - chezmoi  
   `chezmoi init --apply bonny`
