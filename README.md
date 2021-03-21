@@ -14,6 +14,8 @@ Theme:
 
 ## Some things must be installed:
 
+- lastpass cli  
+  `brew install lastpass-cli`
 - chezmoi  
   `chezmoi init --apply bonny`
 - Pure prompt.  
