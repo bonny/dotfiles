@@ -15,6 +15,7 @@ Theme:
 ## Some things must be installed:
 
 - chezmoi
+  `chezmoi init --apply bonny`
 - Pure prompt. 
   `$ npm install --global pure-prompt`
 - Syntax highlighting:  
