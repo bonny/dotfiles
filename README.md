@@ -19,15 +19,15 @@ Theme:
 - **zsh-nvm**  
   `git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
 - **zsh-completions**  
-  `brew install zsh-completions`
+  `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions`
 - **Lastpass CLI**  
   for secrets in Chezmoi  
   `brew install lastpass-cli`
 - **autojump**  
   `brew install autojump`
 - **Pure prompt**  
-  `$ npm install --global pure-prompt`
+  `npm install --global pure-prompt`
 - **Syntax highlighting**  
-  `$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 - **chezmoi**  
   `chezmoi init --apply bonny`
