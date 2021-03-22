@@ -14,9 +14,13 @@ Theme:
 
 ## Some things must be installed:
 
+- **zsh-nvm**  
+  git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 - **Lastpass CLI**  
   for secrets in Chezmoi  
   `brew install lastpass-cli`
+- **autojump**  
+  `brew install autojump`
 - **chezmoi**  
   `chezmoi init --apply bonny`
 - **Pure prompt**  
