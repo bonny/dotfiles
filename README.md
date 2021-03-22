@@ -15,7 +15,9 @@ Theme:
 ## Some things must be installed:
 
 - **zsh-nvm**  
-  git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+  `git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
+- **zsh-completions**  
+  `brew install zsh-completions`
 - **Lastpass CLI**  
   for secrets in Chezmoi  
   `brew install lastpass-cli`
