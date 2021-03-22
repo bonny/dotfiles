@@ -14,6 +14,8 @@ Theme:
 
 ## Some things must be installed:
 
+- **oh-my-zsh**  
+  `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - **zsh-nvm**  
   `git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm`
 - **zsh-completions**  
@@ -23,11 +25,9 @@ Theme:
   `brew install lastpass-cli`
 - **autojump**  
   `brew install autojump`
-- **chezmoi**  
-  `chezmoi init --apply bonny`
 - **Pure prompt**  
   `$ npm install --global pure-prompt`
 - **Syntax highlighting**  
   `$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-- **zsh-completions**     
-  https://github.com/zsh-users/zsh-completions
+- **chezmoi**  
+  `chezmoi init --apply bonny`
