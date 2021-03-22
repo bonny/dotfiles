@@ -123,6 +123,9 @@ source $ZSH/oh-my-zsh.sh
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Enable pure prompt
+# https://github.com/sindresorhus/pure#manually
+# https://github.com/sindresorhus/pure/issues/584#issuecomment-775859718
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit
 promptinit
 prompt pure
