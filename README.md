@@ -12,7 +12,9 @@ Theme:
 - https://github.com/sindresorhus/terminal-snazzy
 - https://github.com/sindresorhus/iterm2-snazzy
 
-## Some things must be installed:
+## Install in this order
+
+Likely in this order anyway. It is the order and method used for the last computer I installed this on (MacBook Air M1 2020).
 
 - **oh-my-zsh**  
   `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
