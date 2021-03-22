@@ -30,6 +30,7 @@ Likely in this order anyway. It is the order and method used for the last comput
 - **Syntax highlighting**  
   `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 - **Pure prompt**  
-  `npm install --global pure-prompt`
+  `git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"`
+  Note: npm install does not work on Apple M1 so that's why we do the git clone.
 - **chezmoi**  
   `chezmoi init --apply bonny`
