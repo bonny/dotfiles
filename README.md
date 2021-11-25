@@ -34,7 +34,6 @@ Likely in this order anyway. It is the order and method used for the last comput
 6. **Syntax highlighting**  
   `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 7. **Pure prompt**  
-  `git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"`
-  Note: npm install does not work on Apple M1 so that's why we do the git clone.
+  `brew install pure`
 8. **chezmoi**  
   `chezmoi init --apply bonny`
