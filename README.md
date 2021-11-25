@@ -14,7 +14,7 @@ Theme:
 
 ## Prerequisites
 
-- brew
+- [Brew](https://brew.sh/)
 
 ## Install order
 
