@@ -36,4 +36,4 @@ Likely in this order anyway. It is the order and method used for the last comput
 7. **Pure prompt**  
   `brew install pure`
 8. **chezmoi**  
-  `chezmoi init --apply bonny`
+  `$ sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply bonnny`
