@@ -191,7 +191,11 @@ source /Users/bonny/.config/broot/launcher/bash/br
 eval "$(mcfly init zsh)"
 
 # Add path to Java
-export PATH="/opt/homebrew/opt/openjdk/bin:/Users/bonny/Library/Android/sdk/platform-tools/:$PATH"
-export ANDROID_SDK_ROOT="/Users/bonny/Library/Android/sdk"
+#export PATH="/opt/homebrew/opt/openjdk/bin:/Users/bonny/Library/Android/sdk/platform-tools/:$PATH"
+#export ANDROID_SDK_ROOT="/Users/bonny/Library/Android/sdk"
+# 2023-03-07 setup for React Native according to https://reactnative.dev/docs/environment-setup
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 
