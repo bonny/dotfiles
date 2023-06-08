@@ -134,10 +134,10 @@ source $ZSH/oh-my-zsh.sh
 # Enable pure prompt
 # https://github.com/sindresorhus/pure#manually
 # https://github.com/sindresorhus/pure/issues/584#issuecomment-775859718
-fpath+=$HOME/.zsh/pure
-autoload -U promptinit
-promptinit
-prompt pure
+#fpath+=$HOME/.zsh/pure
+#autoload -U promptinit
+#promptinit
+#prompt pure
 
 # nvm
 #export NVM_DIR="$HOME/.nvm"
@@ -166,6 +166,10 @@ export MANPAGER='less -X';
 
 # Get more brew request for Github, get from Lastpass
 export HOMEBREW_GITHUB_API_TOKEN="{{ (index (lastpass "5865985665424490517") 0).password }}"
+
+# Set Bat highlighting theme
+# https://github.com/sharkdp/bat#highlighting-theme
+export BAT_THEME="OneHalfDark"
 
 watson_report_day()
 {
@@ -200,4 +204,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# Init Starship prompt
+eval "$(starship init zsh)"
 
